@@ -34,9 +34,6 @@ jobs:
         with:
           images: |
             ghcr.io/${{ github.repository_owner }}/alpine-crond
-          tags: |
-            type=schedule
-            type=schedule,pattern={{date 'YYYYMMDD'}}
             
       - name: Build and push Docker images
         uses: docker/build-push-action@v2
