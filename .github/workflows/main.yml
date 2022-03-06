@@ -46,7 +46,7 @@ jobs:
       - name: Delete old images
         uses: snok/container-retention-policy@v1
         with:
-          image-names: dev
+          image-names: alpine-crond
           cut-off: 30 min ago UTC
           keep-at-least: 1
           account-type: personal
