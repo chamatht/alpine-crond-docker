@@ -5,7 +5,7 @@ name: Build & push container image
 on:
   # Triggers the workflow on cron schedule
   schedule:
-    - cron: '30 8 */3 * *'
+    # - cron: '30 8 */7 * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -50,6 +50,6 @@ jobs:
           cut-off: 30 min ago UTC
           keep-at-least: 1
           account-type: personal
-          token: ${{ secrets.DTOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           
           
