@@ -4,7 +4,7 @@ name: Build & push container image
 
 on:
   # Triggers the workflow on cron schedule
-  schedule:
+  # schedule:
     # - cron: '30 8 */7 * *'
 
   # Allows you to run this workflow manually from the Actions tab
